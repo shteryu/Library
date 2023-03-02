@@ -1,23 +1,23 @@
 import java.util.ArrayList;
 
 public class Library{
-    private ArrayList<Books> library;
+    private ArrayList<Books> librarys;
     private String name;
 
-    public Library(String name, ArrayList<Books> library) {
-        this.library = library;
+    public Library(String name, ArrayList<Books> librarys) {
+        this.librarys = librarys;
         this.name = name;
     }
 
     public ArrayList<Books> getLibrary() {
-        return library;
+        return librarys;
     }
 
     public String getName() {
         return name;
     }
 
-    public void getPopularAuthor(Library library){
+    public void getPopularAuthor(Library librarys){
 
         
 
@@ -25,7 +25,7 @@ public class Library{
 
     @Override
     public String toString() {
-        return "Library [name=" + name + ", library=" + library + "]\n";
+        return "Library [name=" + name + ", library=" + librarys + "]\n";
     }
 
     

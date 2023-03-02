@@ -8,7 +8,7 @@ public class App {
         ArrayList<Books> books1 = new ArrayList<>();
         ArrayList<Library> libraries = new ArrayList<>();
         
-        books.add(new Books("title_1", "author_1", "publisher", "960-425-059-0", 3));
+        books.add(new Books("title_1", "author_1", "publisherNew", "960-425-059-0", 3));
         books.add(new Books("title_2", "author_1", "publisher", "960-425-059-1", 2));
         books.add(new Books("title_3", "author_3", "publisher_2", "960-425-059-3", 5));
         books.add(new Books("title_4", "author_1", "publisher_3", "960-425-059-5", 3));
@@ -24,7 +24,9 @@ public class App {
         libraries.add(new Library("test1", books));
         libraries.add(new Library("test2", books1));
 
+        // System.out.println(libraries);
+        
+        System.out.println(libraries.get(0).getLibrary().get(0).getRating());
 
-        System.out.println(libraries);
     }
 }
